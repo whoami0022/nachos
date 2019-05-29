@@ -1,0 +1,86 @@
+------[ Fri Oct 26 20:00:21 2018 ]------
+--[ ALARM - Tests waitUntil to ensure it waits at least minimum amount of time ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+main
+Queue size: 1
+1010
+Pop
+AlarmTest1: waited for 1020 ticks
+main
+Queue size: 1
+11030
+Pop
+AlarmTest1: waited for 10120 ticks
+main
+Queue size: 1
+111150
+Pop
+AlarmTest1: waited for 100190 ticks
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ JOIN - Tests join on completed child thread ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+busy...
+I (heart) Nachos!
+busy...
+busy...
+busy...
+busy...
+After joining, child1 should be finished.
+is it? true
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ CV2 (1) - Strict interlock test. Ping and pong threads alternate. ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+ping
+pong
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty. ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Added 0
+Added 1
+Added 2
+Added 3
+Added 4
+
+success
+stty: standard input: Inappropriate ioctl for device
+--[ GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match. ]--
+stty: standard input: Inappropriate ioctl for device
+stty: standard input: Inappropriate ioctl for device
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+beg2 matched
+beg1 matched
+
+success
+stty: standard input: Inappropriate ioctl for device

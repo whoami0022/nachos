@@ -1,0 +1,310 @@
+------[ Sat Nov  3 15:15:39 2018 ]------
+--[ CV2 - Test if sleep has acquired the lock ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.sleepWithoutLockTest
+
+success
+
+--[ CV2 - Test if wake has acquired the lock ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.wakeWithoutLockTest
+
+success
+
+--[ CV2 - Test if wakeAll has acquired the lock ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.wakeAllWithoutLockTest
+
+success
+
+--[ CV2 - Test if sleep() sleeps until someone wakes it up ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.sleepTest
+
+success
+
+--[ CV2 - Test if wake() wakes exactly one sleeping thread ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.wakeTest
+
+success
+
+--[ CV2 - Test if wakeAll() wakes all the sleeping threads ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.wakeAllTest
+Wakeups: 3
+
+success
+
+--[ CV2 - Test if wake has no effect when there is no thread sleeping ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.wakeNoEffectTest
+
+success
+
+--[ CV2 - Test if wakeAll has no effect when there is no thread sleeping ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Enter UCSDCondition2Grader.wakeAllNoEffectTest
+
+success
+
+--[ JOIN - Test join() after child had finished. ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+busy...
+I (heart) Nachos!
+busy...
+busy...
+busy...
+busy...
+
+success
+
+--[ JOIN - Test join() before child finishes ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+I (heart) Nachos!
+I (heart) Nachos!
+I (heart) Nachos!
+I (heart) Nachos!
+I (heart) Nachos!
+
+success
+
+--[ JOIN - Test join() on different childs right after spawn, one by one ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+
+success
+
+--[ JOIN - Test join() on different childs; all children are spawned first, then joined one by one. ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+
+success
+
+--[ JOIN - Test differnt threads join different other threads. ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+
+success
+
+--[ JOIN - Test joining same thread multiple times should be an error. ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+
+nachos.machine.AssertionFailureError: parent was able to join to child twice
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDJoinGrader.error1(UCSDJoinGrader.java:135)
+	at nachos.ag.UCSDJoinGrader.run(UCSDJoinGrader.java:166)
+	at nachos.ag.AutoGrader.start(AutoGrader.java:47)
+	at nachos.machine.Machine$1.run(Machine.java:62)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.start(TCB.java:129)
+	at nachos.machine.Machine.main(Machine.java:60)
+
+--[ JOIN - Test joining oneself should be an error. ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+Exception caught: null
+
+success
+
+--[ ALARM - Tests waitUntil to ensure it waits at least minimum amount of time ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+jfork
+Queue size: 1
+jfork
+Queue size: 2
+jfork
+Queue size: 3
+jfork
+Queue size: 4
+3605
+Pop
+6008
+Pop
+6527
+Pop
+8099
+Pop
+
+success
+
+--[ ALARM - Tests whether waitUntil actually wakes up at correct time ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+jfork
+Queue size: 1
+jfork
+Queue size: 2
+jfork
+Queue size: 3
+jfork
+Queue size: 4
+3605
+Pop
+6008
+Pop
+6527
+Pop
+8099
+Pop
+
+success
+
+--[ ALARM - Test if waking up threads in proper order - not necessarily sleep order ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+(unnamed thread)
+Queue size: 1
+(unnamed thread)
+Queue size: 2
+(unnamed thread)
+Queue size: 3
+(unnamed thread)
+Queue size: 4
+(unnamed thread)
+Queue size: 5
+600
+Pop
+3090
+Pop
+4070
+Pop
+10080
+Pop
+12110
+Pop
+
+success
+
+--[ ALARM - Test if thds are waken up at proper time ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+main
+Queue size: 1
+1010
+Pop
+main
+Queue size: 1
+11030
+Pop
+main
+Queue size: 1
+111150
+Pop
+
+success
+
+--[ ALARM - Tests proper handling of negative wait times. ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+
+success
+
+--[ ALARM - Tests if mistakenly waking all the threads ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+(unnamed thread)
+Queue size: 1
+(unnamed thread)
+Queue size: 2
+(unnamed thread)
+Queue size: 3
+(unnamed thread)
+Queue size: 4
+(unnamed thread)
+Queue size: 5
+(unnamed thread)
+Queue size: 6
+(unnamed thread)
+Queue size: 7
+1140
+Pop
+4110
+Pop
+7095
+Pop
+7103
+Pop
+7137
+Pop
+10120
+Pop
+12150
+Pop
+
+success
+
+--[ GAME - Test matching each ability in series ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+beg2 matched
+beg1 matched
+int2 matched
+int1 matched
+exp2 matched
+exp1 matched
+parent finishing
+
+success
+
+--[ GAME - Test matching with two instances of GameMatch ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+beg1 entering match
+beg1 entering match
+beg2 entering match
+beg2 matched
+Thread beg2 returning with match number 1
+beg2 entering match
+beg3 entering match
+beg3 entering match
+beg3 matched
+Thread beg3 returning with match number 2
+
+nachos.machine.AssertionFailureError: expected match number equal to 1
+	at nachos.machine.Lib.assertTrue(Lib.java:89)
+	at nachos.ag.UCSDGameMatchGrader$7.run(UCSDGameMatchGrader.java:109)
+	at nachos.threads.KThread.runThread(KThread.java:171)
+	at nachos.threads.KThread.access$000(KThread.java:42)
+	at nachos.threads.KThread$1.run(KThread.java:160)
+	at nachos.machine.TCB.threadroot(TCB.java:246)
+	at nachos.machine.TCB.access$100(TCB.java:25)
+	at nachos.machine.TCB$1.run(TCB.java:99)
+	at java.lang.Thread.run(Thread.java:748)
+
+--[ GAME - Test matching one ability many times ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+B1 matched
+B3 matched
+B5 matched
+B7 matched
+B9 matched
+B0 matched
+B2 matched
+B4 matched
+B6 matched
+B8 matched
+parent finishing
+
+success
+
+--[ GAME - Test matching with threads of many abilities ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+beg2 matched
+beg1 matched
+parent finishing
+
+success
+
+--[ GAME - Test handling correct match number when threads are interleaved across abilities ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+beg2 matched
+int2 matched
+exp2 matched
+beg1 matched
+int1 matched
+exp1 matched
+parent finishing
+
+success
+
+--[ GAME - Test many matches with many threads concurrently running ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+parent finishing
+
+success
+
+--[ GAME - Test bad ability value ]--
+nachos 5.0j initializing... config interrupt timer elevators user-check grader
+
+success
+

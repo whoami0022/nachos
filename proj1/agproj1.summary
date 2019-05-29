@@ -1,0 +1,48 @@
+------[ Wed Oct 24 13:30:18 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Wed Oct 24 18:30:25 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Thu Oct 25 14:30:36 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Thu Oct 25 17:00:28 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Fri Oct 26 17:00:36 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Fri Oct 26 18:03:12 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Fri Oct 26 19:30:42 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+FAIL : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
+------[ Fri Oct 26 20:00:21 2018 ]------
+PASS : ALARM - Tests waitUntil to ensure it waits at least minimum amount of time
+PASS : JOIN - Tests join on completed child thread
+PASS : CV2 (1) - Strict interlock test. Ping and pong threads alternate.
+PASS : CV2 (2) - Producer creates list [1,2,3,4,5], consumer pops first element until list is empty.
+PASS : GAMEMATCH - Create 1 beginner match, incomplete intermediate match, incomplete expert match.
